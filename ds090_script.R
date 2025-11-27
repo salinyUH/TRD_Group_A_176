@@ -5,6 +5,9 @@ df <- read.csv("tidy_format_co2_emission_dataset.csv")
 # Check the structure
 str(df)
 
+#print few rows
+head(df)
+
 # Convert CO₂ emissions column into numeric (important!)
 df$CO2EmissionRate..mt. <- as.numeric(df$CO2EmissionRate..mt.)
 
