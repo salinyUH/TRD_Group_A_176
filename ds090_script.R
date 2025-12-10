@@ -38,3 +38,11 @@ hist(paired$diff, breaks=20,
      col = "lightblue")
 dev.off()
 
+#  Add normal curve
+png("hist_diff_normal_curve.png")
+hist(paired$diff, freq = FALSE, breaks = 20,
+     main = "Histogram with Normal Curve",
+     xlab = "Change in CO2 Emission (metric tonnes)")
+curve(dnorm(x, mean = mean(paired$diff), sd = sd(paired$diff)),
+      col = "red", lwd = 2, add = TRUE)
+dev.off()
