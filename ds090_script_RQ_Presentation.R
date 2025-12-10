@@ -62,8 +62,5 @@ t.test(CO2 ~ Group, data = combined)
 # If histogram shows data is NOT normal, use non-parametric test:
 wilcox.test(CO2 ~ Group, data = combined)
 
-# STATISTICAL TESTS
-shapiro.test(paired$diff)
-t.test(paired$co2_2021, paired$co2_1990, paired = TRUE)
-wilcox.test(paired$co2_2021, paired$co2_1990, paired = TRUE)
+
 
