@@ -64,5 +64,5 @@ dev.off()
 
 # STATISTICAL TESTS
 shapiro.test(paired$diff)
-t.test(paired$co2_2021, paired$co2_1990, paired = TRUE)
-wilcox.test(paired$co2_2021, paired$co2_1990, paired = TRUE)
+t.test(paired$CO2_2021, paired$CO2_1990, paired = TRUE)
+wilcox.test(paired$CO2_2021, paired$CO2_1990, paired = TRUE)
