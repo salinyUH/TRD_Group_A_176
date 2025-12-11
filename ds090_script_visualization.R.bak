@@ -39,8 +39,8 @@ paired_long$year <- recode(paired_long$year,
 
 boxplot(co2 ~ year, data = paired_long,
         xlab="Year",
-        ylab="CO2 emissions (metric tonnes)",
-        main="CO2 Emissions in 1990 and 2021")
+        ylab="CO₂ emissions (metric tonnes)",
+        main="CO₂ Emissions in 1990 and 2021")
 dev.off()
 
 
